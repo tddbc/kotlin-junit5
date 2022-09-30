@@ -1,11 +1,11 @@
 
 buildscript {
     ext {
-        junit5MinorVersion = '6.2'
+        junit5MinorVersion = '9.0'
     }
 }
 plugins {
-    id 'org.jetbrains.kotlin.jvm' version '1.3.72'
+    id 'org.jetbrains.kotlin.jvm' version '1.7.20'
 }
 
 group 'tddbc'
@@ -29,8 +29,9 @@ dependencies {
 }
 
 compileKotlin {
-    kotlinOptions.jvmTarget = "1.8"
+    kotlinOptions.jvmTarget = "11"
 }
+
 compileTestKotlin {
-    kotlinOptions.jvmTarget = "1.8"
+    kotlinOptions.jvmTarget = "11"
 }
