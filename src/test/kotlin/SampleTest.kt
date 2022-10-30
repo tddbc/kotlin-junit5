@@ -7,7 +7,7 @@ class SampleTest {
     @Test
     @DisplayName("should return Hello TDD Boot Camp!")
     fun `should return Hello TDD Boot Camp`() {
-        val sut = Smaple()
+        val sut = Sample()
 
         val actual = sut.say()
 
